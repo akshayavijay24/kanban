@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css "
+    />
+  </head>
+  <body>
+    <header class="toolbox_cont">
+      <div class="toolbox-priority-cont">
+        <div class="color blue"></div>
+        <div class="color pink"></div>
+        <div class="color purple"></div>
+        <div class="color green"></div>
+      </div>
+      <div class="action-btn-cont">
+        <div class="add-btn">
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="remove-btn">
+          <i class="fa-solid fa-trash"></i>
+        </div>
+      </div>
+    </header>
+
+    <main class="main_cont">
+      <!-- <div class="ticket-cont">
+        <div class="ticket-color green"></div>
+        <div class="ticket-id">idno</div>
+        <div class="ticket-area">Some Task</div>
+        <div class="lock-unlock">
+          <i class="fa-solid fa-lock"></i>
+        </div> 
+       </div> -->
+
+      <!-- splitting the screen -->
+      <div class="heading_cont">
+        <h2 class="task_heading--pending">Pending</h2>
+        <h2 class="task_heading--finished">Finished</h2>
+      </div>
+
+      <div class="container-wrapper">
+        <div class="pending-cont container"></div>
+        <div class="finished-cont container"></div>
+      </div>
+    </main>
+
+    <!-- this is the pop of the notes when you want to create new -->
+    <dialog class="model-cont">
+      <textarea placeholder="Enter Your Task" class="textarea-cont"></textarea>
+      <div class="priority-color-cont">
+        <div class="priority-color pink"></div>
+        <div class="priority-color blue"></div>
+        <div class="priority-color green active"></div>
+        <div class="priority-color purple"></div>
+      </div>
+    </dialog>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/short-unique-id@latest/dist/short-unique-id.min.js"></script>
+  <script src="./script.js"></script>
+</html>
